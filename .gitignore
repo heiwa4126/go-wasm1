@@ -100,4 +100,4 @@ go.work
 # End of https://www.toptal.com/developers/gitignore/api/go,visualstudiocode,emacs
 
 *.wasm
-wasm_exec.js
+wasm_exec*.js

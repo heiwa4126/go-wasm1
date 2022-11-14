@@ -60,4 +60,14 @@ http://127.0.0.1:8080/ をブラウザで開いて、F12で、コンソールに
 [TinyGo](https://tinygo.org/getting-started/install/)があるなら、
 main.wasmがどれだけ小さくなるかが確認できる。
 
+```bash
+cp "$(tinygo env TINYGOROOT)/targets/wasm_exec.js" .
+```
+でTinyGo版のwasm_exec.jsをコピーして (std版とかなり違う)
+
+```bash
+tinygo build -target wasm -o main.wasm
+# または
+tinygo build -target wasm -o main.wasm -no-debug
+```
 
