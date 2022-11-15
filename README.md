@@ -69,6 +69,15 @@ node wasm_exec_node.js main.wasm
 
 が出力されるのを見る。
 
+またはbashが動くなら
+```bash
+cp "$(go env GOROOT)/misc/wasm/wasm_exec_node.js" .
+cp "$(go env GOROOT)/misc/wasm/go_js_wasm_exec"  .
+./go_js_wasm_exec main.wasm
+```
+
+(go_js_wasm_execはbashのみでPowerShell版等はないです)
+
 
 ## TinyGo
 

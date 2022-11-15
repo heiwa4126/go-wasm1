@@ -101,3 +101,4 @@ go.work
 
 *.wasm
 wasm_exec*.js
+go_js_wasm_exec
