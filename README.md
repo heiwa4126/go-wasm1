@@ -54,6 +54,21 @@ http://127.0.0.1:8080/ をブラウザで開いて、F12で、コンソールに
 
 が出力されるのを見る。
 
+## Node.jsで実行する
+
+昔は `wasm_exec.js` をNode.jsで実行すればよかったらしいが、
+最近はNode用のがある。
+
+```powershell
+cp "$(go env GOROOT)/misc/wasm/wasm_exec_node.js" .
+node wasm_exec_node.js main.wasm
+```
+
+これで
+> Hello, WebAssembly!
+
+が出力されるのを見る。
+
 
 ## TinyGo
 
@@ -70,4 +85,3 @@ tinygo build -target wasm -o main.wasm
 # または
 tinygo build -target wasm -o main.wasm -no-debug
 ```
-
